@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- js engine -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            JS Engine
+          </h1>
+        </div>
+        <div class="col-md-10 text-center my-5">
+          <img src="img/1.png" alt="" class="text-center" />
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>
+              Interpreter translate and read code line by line and convert code
+              into bytecode.
+            </li>
+            <li>Compiler convert code into machine code.</li>
+          </ul>
+        </div>
+        <div class="col-md-10 text-center my-5">
+          <img src="img/2.png" alt="" class="text-center" />
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>Parse code.</li>
+            <li>Convert it into abstract systax tree.</li>
+            <li>Then code goes to interpreter</li>
+            <li>
+              Then convert code into bytecode and bytecode is not as low level
+              language as machine code.
+            </li>
+            <li>
+              Profiler checks if there is anything to optimize and if any then
+              interpreter hand over code to profiler.
+            </li>
+            <li>Profiler hand over the code to compiler.</li>
+            <li>Compiler convert the code into low level machine code.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- js engine -->
+
+      <!-- chrome browser js engine -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Chrome browser JS Engine
+          </h1>
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>Chrome browser uses V8 as JS Engine.</li>
+            <li>V8 engine uses JIT( Just In Time ) compiler.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- chrome browser js engine -->
+
+      <!-- optimize code -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Optimize code (webAssembly)
+          </h1>
+        </div>
+        <div class="col-md-10 text-center my-5">
+          <img src="img/3.png" alt="" class="text-center" />
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>WebAssembly is binary executable format.</li>
+            <li>It compiles code to webAssembly which is executable.</li>
+            <li>
+              So it can execute the code fast directly in the browser and no
+              need to go to Js engine.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- optimize code -->
+
+      <!-- call stack and heap memory -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Call Stack and Memory Heap
+          </h1>
+        </div>
+        <div class="col-md-10 text-center my-5">
+          <img src="img/4.png" alt="" class="text-center" />
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>Memory heap is used to store code.</li>
+            <li>Call stack is used to track code and then execute code.</li>
+            <li>Call stack keeps track of the code.</li>
+            <li>Call stack use last in first out.</li>
+            <li>Simple variable can be stored in call stack.</li>
+            <li>
+              Complex data structure like object, array, function is stored in
+              memory heap.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- call stack and heap memory -->
+
+      <!-- stack overflow -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            stack overflow
+          </h1>
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>
+              Stack overflow happen if we use a function inside the same
+              function as nested function.
+            </li>
+            <li>Stack overflow happen because of recursion.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- stack overflow -->
+
+      <!-- Garbage Collection -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Garbage Collection
+          </h1>
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>Js is garbage collected language.</li>
+            <li>Js garbage collection use mark and sweap algorith.</li>
+            <li>
+              After the use of ( var, func, obj ), js checks they have any use
+              or not. If they have no use use js garbage collector removes them
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Garbage Collection -->
+
+      <!-- Memory Leaks -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Memory Leaks
+          </h1>
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <h3>Memory leaks happens because of</h3>
+            <li>Too many global variable.</li>
+            <li>Too many event listener.</li>
+            <li>use of setinterval() or something like this.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Memory Leaks -->
+
+      <!-- Single Threaded -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Single Thread
+          </h1>
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>Js is a single threaded language.</li>
+            <li>
+              It has one call stack and heap memory to execute tasks/code at a
+              time.
+            </li>
+            <li>Js engine runs code synchronously.</li>
+            <li>But in real we do not use js engine only.</li>
+            <li>
+              We use js runtime environment to execute code asynchronously which
+              is provided by browser.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Single Threaded -->
+
+      <!-- Javascript Runtime -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Javascript Runtime
+          </h1>
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>
+              Web browser is running in the background while synchronous js code
+              is running.
+            </li>
+            <li>
+              Web browser is using web api, which communicate with js engine.
+            </li>
+            <li>
+              Web browser provides web api, which can be used by js engine.
+            </li>
+            <li>
+              Web browser uses low level programming language (c++) to create
+              web api like ( fetch(), setTimeout(), window() ... ).
+            </li>
+            <li>
+              If anything comes to call stack which belongs to web api, call
+              stack transfer this to web api.
+            </li>
+          </ul>
+          <div class="bg-dark pt-5 fs-3">
+            <code>
+              <pre>
+                console.log("1");<br>
+                setTimeout(() => { console.log("2"); }, 1000);<br>
+                console.log("3");<br>
+                // output: <br>
+                1<br>
+                3<br>
+                2<br>
+              </pre>
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- Javascript Runtime -->
+
+      <!-- Node Js Javascript Runtime -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Node Js ( Javascript Runtime )
+          </h1>
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>Web browser uses window object for all web api.</li>
+            <li>Node js use global object for all web api.</li>
+            <li>
+              When Node js gets request it transfer the code to the async block.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Node Js Javascript Runtime -->
+
+      <!-- Execution Context -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Execution Context
+          </h1>
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>
+              When we run js code in js engine it creates a global execution
+              context and add it to the call stack.
+            </li>
+            <li>
+              First it creates global execution context window object ( window
+              => browser, global => node ).
+            </li>
+            <li>Then it creates this object.</li>
+            <li>
+              Every time js engine see a function it creates a execution context
+              for function on top of global execution context and add in call
+              stack.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Execution Context -->
+
+      <!-- Lexical Environment -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Lexical Environment or Laxical Scope
+          </h1>
+        </div>
+        <div class="col-md-10 text-center my-5">
+          <img src="img/5.png" alt="" class="text-center" />
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>
+              Lexical Environment is where variable and functions are defined,
+              inside or outside of a scope.
+            </li>
+            <li>Lexical scope determines available variables.</li>
+            <li>
+              Lexical scope does not determine where the function is called.
+            </li>
+            <li>Firtst lexical environment is global lexical environment.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Lexical Environment -->
+
+      <!-- Hoisting -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Hoisting
+          </h1>
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>
+              Hoisting is var and function are moved at the top of everything
+              before execution.
+            </li>
+            <li>
+              var and function are not move at the top physically actually.
+            </li>
+            <li>
+              when js engine see var and function it allocates memory for them
+              first.
+            </li>
+            <li>Hoisting is not work for es6 syntax let and const.</li>
+            <li>var is hoisted as undefined, it not defined yet.</li>
+            <li>
+              function is executed in time of hoisting because function is
+              called immediately.
+            </li>
+            <li>Hoisting happens on every execution context.</li>
+            <li>
+              Every time js engine run a function a execution context is
+              created.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Hoisting -->
+
+      <!-- Function Invocation -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Function Invocation
+          </h1>
+        </div>
+        <div class="col-md-10 text-center my-5">
+          <img src="img/6.png" alt="" class="text-center" />
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>
+              function expression is defined at run time, when we run or call or
+              execute the function.
+            </li>
+            <li>
+              function declaration is defined at parse time, when compiler parse
+              the code, then hoisting happens and allocates memory.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Function Invocation -->
+
+      <!-- Function Arguments -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Function Arguments
+          </h1>
+        </div>
+        <div class="col-md-10 text-center my-5">
+          <img src="img/7.png" alt="" class="text-center" />
+        </div>
+        <div class="col-md-10 text-center my-5">
+          <img src="img/8.png" alt="" class="text-center" />
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>
+              function arguments is not good to use, because it is not
+              optimizable.
+            </li>
+            <li>
+              Instead we can use Array.from(arguments) to convert it as an
+              array.
+            </li>
+            <li>
+              Another way is we can use spread oparator( ... ) to access
+              arguments.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Function Arguments -->
+
+      <!-- Scope Chain -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Scope Chain
+          </h1>
+        </div>
+        <div class="col-md-10 text-center my-5">
+          <img src="img/9.png" alt="" class="text-center" />
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>
+              function can access global or parent scope variable through scope
+              chain.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Scope Chain -->
+
+      <!-- this -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            this
+          </h1>
+        </div>
+        <div class="col-md-10 text-center my-5">
+          <img src="img/10.png" alt="" class="text-center" />
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>(this) is not laxically scoped.</li>
+            <li>(this) is dynamically scoped.</li>
+            <li>it does not depend on where it is called from.</li>
+            <li>it depends on how it is called.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- this -->
+
+      <!-- call(), apply(), bind() -->
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            call(), apply(), bind()
+          </h1>
+        </div>
+        <div class="col-md-10 text-center my-5">
+          <img src="img/10.png" alt="" class="text-center" />
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <!-- call(), apply(), bind() -->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
