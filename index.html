@@ -19,7 +19,7 @@
 				</h1>
 			</div>
 			<div class="col-md-10 text-center my-5">
-				<img src="img/1.png" alt="" class="text-center" />
+				<img class="img-thumbnail" src="img/1.png" alt="" class="text-center" />
 			</div>
 			<div class="col-md-10">
 				<ul class="text-xl fs-3">
@@ -30,6 +30,363 @@
 			</div>
 		</div>
 		<!-- testing code -->
+
+
+
+		<!-- db indexing -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					db indexing
+				</h1>
+			</div>
+			<div class="col-md-10 text-center my-5">
+				<img class="img-thumbnail" src="img/2.png" alt="" class="text-center" />
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>Index makes search faster.</li>
+					<li>when create index it allocate separate memory for that column.</li>
+					<li>indexing uses b-tree data structure.</li>
+					<li>for read intensive situation we use db indexing.</li>
+					<li>CREATE INDEX index_name ON table_name (column_name).</li>
+					<li>primary key and unique work as auto index.</li>
+					<li>after joining multiple table and search fast we use indexing.</li>
+					<li>avoid null value column.</li>
+					<li>avoid small table for indexing.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- db indexing -->
+
+
+
+		<!-- http method -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					http method
+				</h1>
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<h2 class="text-uppercase">put (upsert)</h2>
+					<li>it is used to update or create data</li>
+					<li>we send full request body in put method.</li>
+					<li>if data is not present it create otherwise it update the data.</li>
+					<li>it works based on id.</li>
+					<li>without id it returns 404 error.</li>
+					<br>
+					<h2 class="text-uppercase">patch</h2>
+					<li>we only send required data as request in patch method.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- http method -->
+
+
+
+		<!-- unsigned -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					unsigned
+				</h1>
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>The unsigned in MySQL is a data type.</li>
+					<li>Whenever we write an unsigned to any column that means
+						you cannot insert negative numbers.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- unsigned -->
+
+
+
+		<!-- php error type -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					php error type
+				</h1>
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<h2 class="text-uppercase">Warning</h2>
+					<li>If there is a function that was passed the wrong parameters.</li>
+					<li>If there is a call to another file that could not be found.</li>
+					<li>These errors won't stop the parser from executing other correct code lines in the program.</li>
+					<br>
+					<h2 class="text-uppercase">Notice</h2>
+					<li>Using variables you didn't define.</li>
+					<li>These are very similar to warning errors as they only wish to notify you about something they
+						are not sure why you did, although it doesn't halt the code's execution.</li>
+					<br>
+					<h2 class="text-uppercase">Parse (syntax)</h2>
+					<li>this error causes the PHP parser to terminate the script execution when encountered.</li>
+					<li>Missing out delimiters like the semicolon ; or using such characters incorrectly.</li>
+					<li>Improperly used or missing quotes, brackets, parentheses, and braces.</li>
+					<li>When functions, variables, or any other name is misspelled.</li>
+					<br>
+					<h2 class="text-uppercase">Fatal</h2>
+					<li>A call to an undefined function in your program code.</li>
+					<li>A call to an undefined class.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- php error type -->
+
+
+
+		<!-- Abstract Class -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					Abstract Class
+				</h1>
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>in abstract class we need atleast one abstract method.</li>
+					<li>we only declare function, not implement.</li>
+					<li>we implement function in extended class.</li>
+					<li>in extended class we must use abstract function.</li>
+					<li>we can have both abstract and non abstract property and function.</li>
+					<li>in extended class we must set visibility lower like ( protected => pulic, public !=> protected
+						).
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Abstract Class -->
+
+
+
+		<!-- Interfaces class -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					Interfaces Class
+				</h1>
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>we can inherit from multiple interfaces.</li>
+					<li>in interfaces we can have only methods.</li>
+					<li>all methods by default abstruct and public.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Interfaces class -->
+
+
+
+		<!-- Static  -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					Static
+				</h1>
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>if all property and method of a class is static then class will be static.</li>
+					<li>in interfaces we can have only methods.</li>
+					<li>all methods by default abstruct and public.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Static  -->
+
+
+
+		<!-- Traits -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					Traits
+				</h1>
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>Traits supports multiple inheritance.</li>
+					<li>if we have a same method in parent, child and trait ( priority will be 1 => child 2 => trait 3
+						=> parent )</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Traits -->
+
+
+
+		<!-- Autoload -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					Autoload
+				</h1>
+			</div>
+			<div class="col-md-10 text-center my-5">
+				<img class="img-thumbnail" src="img/3.png" alt="" class="text-center" />
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>autoload magic function automatically load classes.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Autoload -->
+
+
+
+		<!-- set & get -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					__set & __get
+				</h1>
+			</div>
+			<div class="col-md-10 text-center my-5">
+				<img class="img-thumbnail" src="img/4.png" alt="" class="text-center" />
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>__set and __get work for property.</li>
+					<li>we use __set and __get to access or set non existing or private property.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- set & get -->
+
+
+
+		<!-- __call -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					__call
+				</h1>
+			</div>
+			<div class="col-md-10 text-center my-5">
+				<img class="img-thumbnail" src="img/5.png" alt="" class="text-center" />
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>__call work for method.</li>
+					<li>we use __call to access or set non existing or private method.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- __call -->
+
+
+
+		<!-- __callStatic -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					__callStatic
+				</h1>
+			</div>
+			<div class="col-md-10 text-center my-5">
+				<img class="img-thumbnail" src="img/5.png" alt="" class="text-center" />
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>__callStatic work for Static method.</li>
+					<li>we use __callStatic to access or set non existing or Static method.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- __callStatic -->
+
+
+
+		<!-- __sleep -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					__sleep
+				</h1>
+			</div>
+			<div class="col-md-10 text-center my-5">
+				<img class="img-thumbnail" src="img/6.png" alt="" class="text-center" />
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>if we use serialize() in obj, full obj convert into an array.</li>
+					<li>we use __sleep method to convert only required property or method into array.</li>
+					<li>when we use serialize() function __sleep will call automatically.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- __sleep -->
+
+
+
+		<!-- __wakeup -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					__wakeup
+				</h1>
+			</div>
+			<div class="col-md-10 text-center my-5">
+				<img class="img-thumbnail" src="img/7.png" alt="" class="text-center" />
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>if we use unserialize() in array, full array convert into an obj.</li>
+					<li>when we use unserialize() function __wakeup will call automatically.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- __wakeup -->
+
+
+
+		<!-- __invoke -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					__invoke
+				</h1>
+			</div>
+			<div class="col-md-10 text-center my-5">
+				<img class="img-thumbnail" src="img/8.png" alt="" class="text-center" />
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>when we try to call a object as function __invoke will call automatically.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- __invoke -->
+
+
+
+		<!-- Magic Constants -->
+		<div class="row d-flex justify-content-center py-5">
+			<div class="col-md-10 text-center">
+				<h1 class="text-uppercase text-primary border-bottom border-4">
+					Magic Constants
+				</h1>
+			</div>
+			<div class="col-md-10 text-center my-5">
+				<img class="img-thumbnail" src="img/9.png" alt="" class="text-center" />
+			</div>
+			<div class="col-md-10">
+				<ul class="text-xl fs-3">
+					<li>some Magic Constants.</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Magic Constants -->
+
+
+
 
 		<!-- Javascript Runtime -->
 		<!-- <div class="row d-flex justify-content-center py-5">
@@ -74,7 +431,7 @@
 				</div>
 			</div>
 		</div> -->
-		<!-- Javascript Runtime -->
+
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
